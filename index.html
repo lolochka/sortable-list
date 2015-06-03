@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Menu</title>
+    <style>
+        [draggable] {
+          -moz-user-select: none;
+          -khtml-user-select: none;
+          -webkit-user-select: none;
+          user-select: none;
+          /* Required to make elements draggable in old WebKit */
+          -khtml-user-drag: element;
+          -webkit-user-drag: element;
+        }
+        
+        .column {
+            width: 150px;
+            padding: 1em 0;
+            font: 18px;
+            text-transform: uppercase;
+            color: yellow;
+            font-weight: 700;
+            background-color: darkturquoise;
+            margin: 5px;
+            text-align: center;
+            cursor: move;
+        }
+        
+        
+        .column.over {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+   <ul id="columns">
+      <li class="column" draggable="true">first</li>
+      <li class="column" draggable="true">second</li>
+      <li class="column" draggable="true">third</li>
+      <li class="column" draggable="true">fourth</li>
+      <li class="column" draggable="true">Fifth</li>
+   </ul>
+   <script src="myscript.js" type="text/javascript"></script>
+</body>
+</html>
